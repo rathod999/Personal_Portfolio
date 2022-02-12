@@ -1,9 +1,171 @@
-body{
-    background: #44A08D;  
-    background: -webkit-linear-gradient(to right, #093637, #44A08D);  
-    background: linear-gradient(to right, #093637, #44A08D); 
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: rgb(red, green, blue);
-    font-family: 'Zen Antique Soft', serif;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: black;
+    box-shadow: 0 5px 25px black;
+    z-index: 1000;
+}
+
+.logo {
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+#toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: rgb(26, 2, 102);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: white;
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+#toggle::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: white;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+
+#toggle.active::before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+#toggle.active::after {
+    transform: translateX(0px) rotate(-45deg);
+}
+
+#toggle.active {
+    background: blueviolet;
+}
+
+#navbar {
+    position: relative;
+    height: 60px;
+    right: 60px;
+    background: black;
+    transition: 0.5s;
+    width: 0px;
+    overflow: hidden;
+}
+
+#navbar.active {
+    width: 604px;
+}
+
+#navbar ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: ghostwhite;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0 15px;
+    letter-spacing: 2px;
+    /* white-space: normal; */
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background: rgb(212, 140, 51);
+}
+
+
+/* Sections*/
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: brown;
+    font-size: 18vw;
+    font-weight: 700;
+}
+
+
+/* Responsiveness Of Navbar */
+
+@media(max-width: 912px) {
+    #navbar {
+        position: fixed;
+        bottom: -100;
+        right: 0;
+        width: 100%;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar.active {
+        height: calc(100vh - 60px);
+        bottom: 0;
+        width: 100%;
+    }
+    #navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
