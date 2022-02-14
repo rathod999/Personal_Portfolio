@@ -20,9 +20,13 @@ const text = document.qyuerySelector('.text p');
 text.innerHTML = text.innerText.split("").map((char, i) =>
     '<span style="transform:rotate(${i * 8.2}deg)"> ${char} < /span>').join("")
 
+<<<<<<< HEAD
 
 
 // Loading of page
 window.on('load', function() {
     $('#loader').css
 })
+=======
+$('#auto_radius').circleType();
+>>>>>>> b4eccd370f7c685ec4903ae4ec3b3ffea9cee292
