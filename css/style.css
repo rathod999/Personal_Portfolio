@@ -191,9 +191,9 @@ section {
     width: 150px;
     height: 150px;
     background: url('/images/photo.jpeg');
-    background-repeat: none;
-    background-size: 50%;
-    border-radius: 50%;
+    /* background-repeat: none; */
+    /* background-size: 50%;
+    border-radius: 50%; */
     filter: brightness((1.5) contrast(1.5));
 }
 
@@ -220,7 +220,34 @@ section {
     transform-origin: 0 100px;
 }
 
+.main{
+    position: absolute;
+    top:400px;
+    width: 100%;
+    left: 10px;
+}
+
+.home_conatiner{
+    display: flex;
+    width: 100%;
+}
 .home_content {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+.home_content a{
+    margin: 5px 0 5px 0;
+    font-size: 35px;
+}
+
+.circle{
+margin-right: 10px;
+}
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
