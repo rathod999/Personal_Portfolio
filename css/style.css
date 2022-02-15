@@ -191,9 +191,9 @@ section {
     width: 150px;
     height: 150px;
     background: url('/images/photo.jpeg');
-    /* background-repeat: none; */
-    /* background-size: 50%;
-    border-radius: 50%; */
+    background-repeat: none;
+    background-size: 50%;
+    border-radius: 50%;
     filter: brightness((1.5) contrast(1.5));
 }
 
@@ -220,6 +220,7 @@ section {
     transform-origin: 0 100px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .loader {
     position: absolute;
@@ -333,4 +334,9 @@ margin-right: 10px;
     width: 100%;
     height: 100%;
 >>>>>>> b4eccd370f7c685ec4903ae4ec3b3ffea9cee292
+=======
+.home_content {
+    display: flex;
+    flex-direction: column;
+>>>>>>> parent of b4eccd3... circle and menu changes added
 }
