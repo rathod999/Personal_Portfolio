@@ -19,6 +19,7 @@ toggle.onclick = function() {
 const text = document.qyuerySelector('.text p');
 text.innerHTML = text.innerText.split("").map((char, i) =>
 <<<<<<< HEAD
+<<<<<<< HEAD
     '<span style="transform:rotate(${i * 8.2}deg)"> ${char} < /span>').join("")
 
 <<<<<<< HEAD
@@ -31,6 +32,9 @@ window.on('load', function() {
 =======
 $('#auto_radius').circleType();
 >>>>>>> b4eccd370f7c685ec4903ae4ec3b3ffea9cee292
+=======
+    '<span style="transform:rotate(${i * 8.2}deg)"> ${char} < /span>').join("")
+>>>>>>> parent of b4eccd3... circle and menu changes added
 =======
     '<span style="transform:rotate(${i * 8.2}deg)"> ${char} < /span>').join("")
 >>>>>>> parent of b4eccd3... circle and menu changes added
