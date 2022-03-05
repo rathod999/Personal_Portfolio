@@ -14,5 +14,3 @@ toggle.onclick = function() {
     toggle.classList.toggle('active');
     navbar.classList.toggle('active');
 }
-
-// image animation
