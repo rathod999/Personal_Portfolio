@@ -159,8 +159,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -450px;
-    left: 650px;
+    top: -700px;
+    left: 1000px;
 }
 
 .circle img {
@@ -170,8 +170,8 @@ section {
 }
 
 #intro {
-    top: -380px;
-    left: -100px;
+    top: -400px;
+    left: 150px;
     position: relative;
     color: aliceblue;
 }
@@ -215,6 +215,98 @@ section {
 
 .instagram {
     color: red;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .static-txt {
+    position: relative;
+    color: #fff;
+    top: -390px;
+    left: 150px;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+    position: relative;
+    top: -390px;
+    left: 150px;
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: blueviolet;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+#para {
+    position: relative;
+    top: -400px;
+    left: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+
+/* Skill section starts here */
+
+#skill-section {
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 70px;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 
