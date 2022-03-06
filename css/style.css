@@ -11,7 +11,8 @@ body {
     width: 100%;
     height: 100vh;
     background: black;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -30,10 +31,12 @@ header {
 }
 
 
-/* .logo {
-    width: 150px;
-    cursor: pointer;
-} */
+/* Particles js */
+
+#particles-js {
+    height: 100%;
+    width: auto;
+}
 
 .logo {
     height: 60px;
@@ -135,12 +138,58 @@ header {
 /* Home Page starts here */
 
 #home-page {
-    height: 100%;
+    width: 100%;
+    height: auto;
+    padding: 20px 8%;
+    position: relative;
 }
 
 #home-page .info {
     margin-left: 8%;
     margin-top: 15%;
+}
+
+.home-btns {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.btn {
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.btn.btn-home {
+    background: #482e84;
+    color: #fff;
+    border-color: #482e84;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-home:hover {
+    background: transparent;
+    border-color: #482e84;
+    color: white;
+}
+
+.btn.btn-home-me {
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-home-me:hover {
+    background: #482e84;
+    border-color: #482e84;
+    color: black;
 }
 
 .info h1 {
@@ -206,12 +255,212 @@ header {
 /* home page ends here */
 
 
+/* About Section Starts here */
+
+#about_me {
+    width: 100%;
+    height: auto;
+    padding: 20px 8%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.about-wrapper {
+    height: 100vh;
+}
+
+.about-left {
+    background: #482e84;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-left-content>div {
+    background: #7655c3;
+    padding: 4rem 4rem 2.5rem 5rem;
+    text-align: center;
+}
+
+.about-left-content {
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+}
+
+.about-img img {
+    display: block;
+    width: 200px;
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.shadow {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.shadow::after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    height: 7px;
+    width: 50px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.shadow:hover .about-img {
+    transform: translateY(-10px);
+}
+
+.shadow:hover::after {
+    opacity: 1;
+}
+
+.about-left-content h2 {
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #edffec;
+}
+
+.about-left-content h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+
+.icons {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+}
+
+.icons li {
+    list-style-type: none;
+    background: #482e84;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.icons li:hover {
+    background: #edffec;
+    color: #000;
+}
+
+.about-right {
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+}
+
+.about-right h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+.about-right h1 span {
+    color: #482e84;
+}
+
+.about-right h2 {
+    font-weight: 600;
+}
+
+.about-btns {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.btn {
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.btn.btn-pink {
+    background: #482e84;
+    color: #fff;
+    border-color: #482e84;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-pink:hover {
+    background: transparent;
+    border-color: #482e84;
+    color: #000;
+}
+
+.btn.btn-white {
+    transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-white:hover {
+    background: #482e84;
+    border-color: #482e84;
+    color: #fff;
+}
+
+.about-para p {
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+
+/* about section Ends Here */
+
+
 /* Skill section starts here */
 
 #skill-section {
     width: 100%;
     height: auto;
-    padding: 80px 13%;
+    padding: 20px 8%;
     position: relative;
 }
 
@@ -221,6 +470,7 @@ header {
     display: grid;
     place-items: center;
     text-align: center;
+    text-decoration: underline;
     color: aliceblue;
 }
 
@@ -297,7 +547,7 @@ header {
 }
 
 .skill-bar .bar .javascript {
-    width: 70%;
+    width: 65%;
     animation: javascript 3s;
 }
 
@@ -306,7 +556,7 @@ header {
         width: 0;
     }
     100% {
-        width: 70%;
+        width: 65%;
     }
 }
 
@@ -384,6 +634,57 @@ header {
 /* Skills Section ends here */
 
 
+/* =====Education Section Starts Here===== */
+
+
+/* 
+#education {
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+    position: relative;
+} */
+
+.timeline {
+    border-left: 1px dashed hsl(193deg, 84%, 52%);
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    left: -18px;
+    top: 0;
+    background-color: wheat;
+    position: absolute;
+    width: 35px;
+    z-index: 1;
+    text-align: center;
+    line-height: 35px;
+}
+
+.timeline.timeline-icon:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: yellow;
+    opacity: 0.5;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    margin: -4px;
+}
+
+.timeline .timeline-box {
+    padding-left: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+/*===== education Section Ends here====== */
+
+
 /* Responsiveness Of Navbar */
 
 @media(max-width: 908px) {
@@ -408,5 +709,19 @@ header {
         align-items: center;
         top: 10px;
         height: 100px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-left {
+        position: relative;
+    }
+    .about-left-content {
+        position: absolute;
+        right: -50px;
     }
 }

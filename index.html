@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <!-- css style link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
@@ -19,6 +19,8 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <script src="https://kit.fontawesome.com/78ccdade35.js" crossorigin="anonymous"></script>
+
+    <!-- Particle Js -->
 
 
 
@@ -29,6 +31,9 @@
 
 
 
+    <!-- <div id="particles-js">
+    </div> -->
+
     <!-- Nav Bar starts here -->
     <header id="header">
         <img src="./images/log.jpg" class="logo">
@@ -38,7 +43,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#skill-section">Skills</a></li>
-                <li><a href="#Education">Education</a></li>
+                <li><a href="#eduction">Education</a></li>
                 <li><a href="#Portfolio">Portfolio</a></li>
                 <li><a href="#Contact Me">Contact Me</a></li>
 
@@ -47,35 +52,85 @@
         </div>
 
     </header>
-
-
     <!-- Nav Bar ends heres -->
+
+
     <!-- Home Section -->
     <section id="home-page">
-        <div class="info">
+        <div class="info animate__animated animate__backInLeft">
             <h1>I'm <span style="color:blue; line-height:22px;">Praveen </span>Rathod</h1>
             <p style="color: azure;">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing<br> layouts and visual mockups.</p>
-            <a href="images/Praveen's Resume.pdf">Download CV</a>
-            <a href="">About Me</a>
+            <div class="home-btns">
+                <button type="button" class="btn btn-home">RESUME</button>
+                <button type="button" class="btn btn-home-me">About Me</button>
+            </div>
         </div>
         <div class="img-box">
             <img src="./images/back.png" class="back-img">
             <img src="./images/photo.png" class="man-img">
         </div>
-        <div class="social">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <div class="social animate__animated animate__bounceInLeft">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
 
 
 
     </section>
 
+    <!-- Home Section ends here -->
 
+    <!-- About me Section -->
+
+    <section id="about_me">
+        <div class="about-wrapper">
+            <div class="about-left">
+                <div class="about-left-content">
+                    <div>
+                        <div class="shadow">
+                            <div class="about-img">
+                                <img src="images/photo.png" alt="about image">
+                            </div>
+                        </div>
+
+                        <h2>Praveen<br>Rathod</h2>
+                        <h3>Software Engineer</h3>
+                    </div>
+
+                    <ul class="icons">
+                        <li><i class="fab fa-linkedin"></i></li>
+                        <li><i class="fab fa-github"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-right">
+                <h1>hi<span>!</span></h1>
+                <h2>Here's who I am & what I do</h2>
+                <div class="about-btns">
+                    <button type="button" class="btn btn-pink">resume</button>
+                    <button type="button" class="btn btn-white">projects</button>
+                </div>
+
+                <div class="about-para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aspernatur possimus ullam quaerat, laboriosam ex voluptate aliquid laborum, obcaecati ratione accusamus! Ea nisi modi dolor nam numquam? Temporibus, molestias amet.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iure tempora alias laudantium sapiente impedit!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- About me section ends here -->
 
     <!-- Skill Section -->
-    <section id="skill-section">
+    <section id="skill-section" class="animate__animated animate__bounceInLeft">
         <div class="header-skill-head">
             <h1>My <span>Skills</span></h1>
             <p>Here is My Skills to respresent my Expertise</p>
@@ -100,24 +155,7 @@
                     <span class="css"></span>
                 </div>
             </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>JAVASCRIPT</p>
-                    <p class="percent">70%</p>
-                </div>
-                <div class="bar">
-                    <span class="javascript"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>SQL</p>
-                    <p class="percent">80%</p>
-                </div>
-                <div class="bar">
-                    <span class="sql"></span>
-                </div>
-            </div>
+
             <div class="skill-bar">
                 <div class="info">
                     <p>PYTHON</p>
@@ -134,6 +172,25 @@
                 </div>
                 <div class="bar">
                     <span class="cpp"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>SQL</p>
+                    <p class="percent">80%</p>
+                </div>
+                <div class="bar">
+                    <span class="sql"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>JAVASCRIPT</p>
+                    <p class="percent">65%</p>
+                </div>
+                <div class="bar">
+                    <span class="javascript"></span>
                 </div>
             </div>
             <div class="skill-bar">
@@ -156,17 +213,157 @@
             </div>
         </div>
     </section>
-
     <!-- skill section ends here -->
 
 
 
+
+
+
+    <!-- Eductaion section starts here -->
+    <section id="eductaion" class="container">
+        <h1 style="color: white;text-align: center; text-decoration: underline;">Qualifications</h1>
+        <div class="row shadow my-4 p-2 bg-black rounded-lg">
+            <div class="col-md-6">
+                <div class="py-2">
+                    <h2 style="color: white;">Education</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-box">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 style="color: white;"> BE In Computer Engineering</h4>
+                            <hr class="bg-info">
+                            <p style="color: white;">MMCOE,Karvenagar, Pune-411052
+                            </p>
+                            <p class="text-info"> CGPA: 9.39 <br>2020-2023 </p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 style="color: white;"> Diploma In Computer Engineering</h4>
+                            <hr class="bg-info">
+                            <p style="color: white;">TSSM’s BSCOER,Narhe Pune-411041
+                            </p>
+                            <p class="text-info"> Percentage:90.74%<br> 2018-2020 </p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 style="color: white;"> 12th/HSC(Science)</h4>
+                            <hr class="bg-info">
+                            <p style="color: white;">Dr.NSAM PU College Nitte Karkala,Udupi-574110
+                            </p>
+                            <p class="text-info"> Percentage: 90.33%<br> 2016-2017 </p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 style="color: white;"> 10th/SSC</h4>
+                            <hr class="bg-info">
+                            <p style="color: white;">KSPM Govt High School, Karkala,Udupi-574104</p>
+                            <p class="text-info"> Percentage:86.08%<br>2014-2015 </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="py-2">
+                    <h2 style="color: white;">Internship/Certifications</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-box">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 style="color: white;"> Software Developer Intern</h4>
+                            <hr class="bg-info">
+                            <p style="color: white;">TechCiti Software Consulting Pvt Ltd
+                            </p>
+                            <p style="color: white; text-shadow: 0ch;">In this internship I have learnt about the how to develop a website using the Python Django Framework.</p>
+                            <p class="text-info"> 08/2021 - 09/2021 </p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 style="color: white;"> Digital Marketing Certification</h4>
+                            <hr class="bg-info">
+                            <p style="color: white;">Google Digital Garage
+                            </p>
+                            <p class="text-info"> 06/2020 - 08/2020</p>
+                            <br>
+
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-box">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 style="color: white;"> Web Development Course</h4>
+                            <hr class="bg-info">
+                            <p style="color: white;">Udemy
+                            </p>
+                            <p class="text-info"> 05/2020 - 07/2020 <br> </p>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-box">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 style="color: white;"> Python Programming For Everybody</h4>
+                            <hr class="bg-info">
+                            <p style="color: white;">Coursera
+                            </p>
+                            <p class="text-info"> 12/2020 - 01/2021 </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+    <!-- Eductaion Section ends here -->
+
     <!-- Script files -->
     <script type="text/javascript" src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Jquery cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Script Files ends Here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
 
 
 
