@@ -135,7 +135,7 @@ header {
 
 #home-page {
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 20px 8%;
     position: relative;
 }
@@ -458,13 +458,14 @@ header {
 
 #skill-section {
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 20px 8%;
     position: relative;
 }
 
 .header-skill-head {
     width: 100%;
+    margin-top: 50px;
     margin-bottom: 70px;
     display: grid;
     place-items: center;
@@ -635,13 +636,12 @@ header {
 
 /* =====Education Section Starts Here===== */
 
-
-/* .conatiner {
+#education {
     width: 100%;
-    height: auto;
-    padding: 80px 13%;
+    height: 100%;
+    /* padding: 80px 13%; */
     position: relative;
-} */
+}
 
 .timeline {
     border-left: 1px dashed hsl(193deg, 84%, 52%);
@@ -729,3 +729,6 @@ header {
         right: -50px;
     }
 }
+
+
+/* @media screen and {} */
