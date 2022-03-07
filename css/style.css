@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    color: white;
     scroll-behavior: smooth;
 }
 
@@ -32,11 +33,6 @@ header {
 
 
 /* Particles js */
-
-#particles-js {
-    height: 100%;
-    width: auto;
-}
 
 .logo {
     height: 60px;
@@ -248,7 +244,7 @@ header {
 }
 
 .social a:hover {
-    color: #ff4321;
+    color: #482e84;
 }
 
 
@@ -303,7 +299,7 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-.shadow {
+.shadow_img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
@@ -313,7 +309,7 @@ header {
     cursor: pointer;
 }
 
-.shadow::after {
+.shadow_img::after {
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
@@ -328,11 +324,11 @@ header {
     transition: all 0.6s ease;
 }
 
-.shadow:hover .about-img {
+.shadow_img:hover .about-img {
     transform: translateY(-10px);
 }
 
-.shadow:hover::after {
+.shadow_img:hover::after {
     opacity: 1;
 }
 
@@ -392,6 +388,7 @@ header {
 
 .about-right h1 {
     font-size: 7rem;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -400,6 +397,7 @@ header {
 }
 
 .about-right h2 {
+    color: #000;
     font-weight: 600;
 }
 
@@ -446,13 +444,14 @@ header {
 }
 
 .about-para p {
+    color: black;
     font-weight: 300;
     padding: 0.5rem;
     opacity: 0.8;
 }
 
 
-/* about section Ends Here */
+/*  About section Ends Here */
 
 
 /* Skill section starts here */
@@ -479,7 +478,7 @@ header {
 }
 
 .header-skill-head h1 span {
-    color: green;
+    color: #482e84;
 }
 
 .skill-main {
@@ -514,7 +513,7 @@ header {
     width: 50%;
     height: 100%;
     position: absolute;
-    background-color: #1d1160;
+    background-color: #198e32;
     border-radius: 25px;
 }
 
@@ -637,8 +636,7 @@ header {
 /* =====Education Section Starts Here===== */
 
 
-/* 
-#education {
+/* .conatiner {
     width: 100%;
     height: auto;
     padding: 80px 13%;
@@ -651,10 +649,16 @@ header {
     margin-bottom: 30px;
 }
 
+.timeline .timeline-box {
+    padding-left: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
 .timeline-icon {
     left: -18px;
     top: 0;
-    background-color: wheat;
+    background-color: white;
     position: absolute;
     width: 35px;
     z-index: 1;
@@ -662,12 +666,12 @@ header {
     line-height: 35px;
 }
 
-.timeline.timeline-icon:after {
+.timeline .timeline-icon:after {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    background-color: yellow;
+    background-color: #482e84;
     opacity: 0.5;
     z-index: -1;
     right: 0;
@@ -675,14 +679,14 @@ header {
     margin: -4px;
 }
 
-.timeline .timeline-box {
-    padding-left: 40px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
 
 /*===== education Section Ends here====== */
+
+
+/* Portfolio Sections */
+
+
+/* Portfolio scetion ends here */
 
 
 /* Responsiveness Of Navbar */
