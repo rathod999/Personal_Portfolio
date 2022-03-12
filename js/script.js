@@ -14,3 +14,19 @@ toggle.onclick = function() {
     toggle.classList.toggle('active');
     navbar.classList.toggle('active');
 }
+
+
+let slides = document.querySelectorAll('.slide-contaier');
+let index = 0;
+
+function next() {
+    slides[index].classList.remove('active_slide');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active_slide');
+}
+
+function prev() {
+    slides[index].classList.remove('active_slide');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active_slide');
+}
